@@ -1,0 +1,55 @@
+/* Custom styles for AICoreX */
+body {
+    transition: background-color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark {
+    background-color: #111827;
+    color: #f3f4f6;
+}
+
+.dark .bg-white {
+    background-color: #1f2937;
+}
+
+.dark .text-gray-800 {
+    color: #f3f4f6;
+}
+
+.dark .text-gray-600 {
+    color: #d1d5db;
+}
+
+/* Sidebar transition */
+.sidebar {
+    transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Chatbot icon pulse animation */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.chatbot-icon {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
