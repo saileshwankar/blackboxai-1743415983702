@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Directory | AICoreX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-50 dark:bg-gray-900">
+    <!-- Header (same as index.html) -->
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-md z-50">
+        <!-- ... header content ... -->
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex pt-16">
+        <!-- Sidebar (same as index.html) -->
+        <aside id="sidebar" class="w-64 bg-white dark:bg-gray-800 shadow-lg fixed left-0 top-16 bottom-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+            <!-- ... sidebar content ... -->
+        </aside>
+
+        <!-- Page Content -->
+        <main class="flex-1 ml-0 md:ml-64 p-6">
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">AI Tools Directory</h1>
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 md:mb-0">Browse our collection of 500+ AI tools</p>
+                    <div class="flex space-x-2">
+                        <div class="relative">
+                            <input type="text" placeholder="Search tools..." class="pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                        </div>
+                        <select class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>All Categories</option>
+                            <option>Writing</option>
+                            <option>Development</option>
+                            <option>Design</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Tools -->
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Featured Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="featured-tools">
+                    <!-- Featured tools will be loaded here -->
+                </div>
+            </div>
+
+            <!-- All Tools -->
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white">All AI Tools</h2>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-600 dark:text-gray-300">Sort by:</span>
+                        <select class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>Most Popular</option>
+                            <option>Newest</option>
+                            <option>Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="all-tools">
+                    <!-- All tools will be loaded here -->
+                </div>
+                <div class="mt-8 flex justify-center">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Load More</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="fixed bottom-5 right-5 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:scale-110 transition-transform cursor-pointer">
+        <i class="fas fa-comment-dots text-blue-600 dark:text-blue-400 text-xl"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
