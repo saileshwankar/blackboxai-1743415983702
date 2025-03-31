@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chrome Extensions | AICoreX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-50 dark:bg-gray-900">
+    <!-- Header (same as index.html) -->
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-md z-50">
+        <!-- ... header content ... -->
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex pt-16">
+        <!-- Sidebar (same as index.html) -->
+        <aside id="sidebar" class="w-64 bg-white dark:bg-gray-800 shadow-lg fixed left-0 top-16 bottom-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+            <!-- ... sidebar content ... -->
+        </aside>
+
+        <!-- Page Content -->
+        <main class="flex-1 ml-0 md:ml-64 p-6">
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">AI Chrome Extensions</h1>
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 md:mb-0">Enhance your browser with these AI-powered extensions</p>
+                    <div class="flex space-x-2">
+                        <div class="relative">
+                            <input type="text" placeholder="Search extensions..." class="pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                        </div>
+                        <select class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>All Categories</option>
+                            <option>Productivity</option>
+                            <option>Writing</option>
+                            <option>Development</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extension Categories -->
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Categories</h2>
+                <div class="flex flex-wrap gap-3">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm">All</button>
+                    <button class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Productivity</button>
+                    <button class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Writing</button>
+                    <button class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Development</button>
+                    <button class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Research</button>
+                </div>
+            </div>
+
+            <!-- Extensions Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="extensions-grid">
+                <!-- Extension cards will be loaded here -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-700 relative">
+                        <div class="absolute top-2 right-2 bg-blue-100 text-blue-800 px-2 py-1 rounded-md text-xs font-semibold">Chrome</div>
+                        <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg')"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold text-lg text-gray-800 dark:text-white">AI Writing Assistant</h3>
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <span class="ml-1 text-sm text-gray-600 dark:text-gray-300">4.7</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mt-2">Enhance your writing with AI suggestions and corrections</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-sm text-blue-600 dark:text-blue-400">500K+ users</span>
+                            <a href="#" class="px-3 py-1 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition-colors">Add to Chrome</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 flex justify-center">
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Load More Extensions</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="fixed bottom-5 right-5 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:scale-110 transition-transform cursor-pointer">
+        <i class="fas fa-comment-dots text-blue-600 dark:text-blue-400 text-xl"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
