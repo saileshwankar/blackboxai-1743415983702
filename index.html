@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICoreX - AI Tools Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-50 dark:bg-gray-900">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <button id="sidebarToggle" class="text-gray-700 dark:text-gray-200">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">AICoreX</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="text-gray-700 dark:text-gray-200">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="text-gray-700 dark:text-gray-200">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex pt-16">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="w-64 bg-white dark:bg-gray-800 shadow-lg fixed left-0 top-16 bottom-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+            <div class="p-4 overflow-y-auto h-full">
+                <nav>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="index.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-robot mr-3"></i>
+                                <span>AI Tools</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="deals.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-tag mr-3"></i>
+                                <span>AI Deals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-newspaper mr-3"></i>
+                                <span>AI Blogs & News</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="models.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-brain mr-3"></i>
+                                <span>AI Models</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="extensions.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fab fa-chrome mr-3"></i>
+                                <span>AI Chrome Extensions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="usecases.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-lightbulb mr-3"></i>
+                                <span>AI Use Cases</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-tools.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-plus-circle mr-3"></i>
+                                <span>Add AI Tools</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="advertise.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-bullhorn mr-3"></i>
+                                <span>Advertise AI Tools</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assignments.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-tasks mr-3"></i>
+                                <span>AI Assignments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-sign-in-alt mr-3"></i>
+                                <span>Login</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Page Content -->
+        <main class="flex-1 ml-0 md:ml-64 p-6">
+            <div class="mb-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Featured AI Tools</h2>
+                    <div class="mt-2 md:mt-0">
+                        <select class="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>All Categories</option>
+                            <option>AI Assistant</option>
+                            <option>Writing</option>
+                            <option>Development</option>
+                            <option>Design</option>
+                        </select>
+                        <select class="ml-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>Sort By</option>
+                            <option>Most Popular</option>
+                            <option>Newest</option>
+                            <option>Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="tools-container">
+                <!-- AI Tool Cards will be populated by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="fixed bottom-5 right-5 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:scale-110 transition-transform cursor-pointer">
+        <i class="fas fa-comment-dots text-blue-600 dark:text-blue-400 text-xl"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
