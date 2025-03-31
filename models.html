@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Models | AICoreX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-50 dark:bg-gray-900">
+    <!-- Header (same as index.html) -->
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <button id="sidebarToggle" class="text-gray-700 dark:text-gray-200">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">AICoreX</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="themeToggle" class="text-gray-700 dark:text-gray-200">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="text-gray-700 dark:text-gray-200">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex pt-16">
+        <!-- Sidebar (same as index.html) -->
+        <aside id="sidebar" class="w-64 bg-white dark:bg-gray-800 shadow-lg fixed left-0 top-16 bottom-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-40">
+            <div class="p-4 overflow-y-auto h-full">
+                <nav>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="index.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-robot mr-3"></i>
+                                <span>AI Tools</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="deals.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-tag mr-3"></i>
+                                <span>AI Deals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-newspaper mr-3"></i>
+                                <span>AI Blogs & News</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="models.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-brain mr-3"></i>
+                                <span>AI Models</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="extensions.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fab fa-chrome mr-3"></i>
+                                <span>AI Chrome Extensions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="usecases.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-lightbulb mr-3"></i>
+                                <span>AI Use Cases</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-tools.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-plus-circle mr-3"></i>
+                                <span>Add AI Tools</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="advertise.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-bullhorn mr-3"></i>
+                                <span>Advertise AI Tools</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assignments.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-tasks mr-3"></i>
+                                <span>AI Assignments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="flex items-center p-2 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <i class="fas fa-sign-in-alt mr-3"></i>
+                                <span>Login</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Page Content -->
+        <main class="flex-1 ml-0 md:ml-64 p-6">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-2">AI Models</h1>
+                <p class="text-gray-600 dark:text-gray-300">Explore and compare the latest AI models and architectures</p>
+            </div>
+
+            <!-- Model Categories -->
+            <div class="mb-6 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <div class="flex flex-wrap gap-3">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm">All Models</button>
+                    <button class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">LLMs</button>
+                    <button class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Computer Vision</button>
+                    <button class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Generative AI</button>
+                    <button class="px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Reinforcement Learning</button>
+                </div>
+            </div>
+
+            <!-- Models Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Model 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-700 relative">
+                        <div class="absolute top-2 right-2 bg-blue-100 text-blue-800 px-2 py-1 rounded-md text-xs font-semibold">NEW</div>
+                        <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg')"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg text-gray-800 dark:text-white">GPT-4</h3>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">OpenAI</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Multimodal large language model with improved reasoning capabilities</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">LLM</span>
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">175B params</span>
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">Multimodal</span>
+                        </div>
+                        <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Model 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-700">
+                        <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/8386426/pexels-photo-8386426.jpeg')"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg text-gray-800 dark:text-white">Stable Diffusion 3</h3>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Stability AI</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Advanced text-to-image model with improved composition</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">Generative</span>
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">Diffusion</span>
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">Image</span>
+                        </div>
+                        <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Model 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-700">
+                        <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/8386433/pexels-photo-8386433.jpeg')"></div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg text-gray-800 dark:text-white">Claude 3</h3>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Anthropic</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Constitutional AI model focused on safety and alignment</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">LLM</span>
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">52B params</span>
+                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs">Safety</span>
+                        </div>
+                        <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 flex justify-center">
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Load More Models</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="fixed bottom-5 right-5 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:scale-110 transition-transform cursor-pointer">
+        <i class="fas fa-comment-dots text-blue-600 dark:text-blue-400 text-xl"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
